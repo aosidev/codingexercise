@@ -2,13 +2,16 @@
 //  Backend task
 //
 //  Generate a backend service to calculate the weather average for a country
-//  Request: /report with country code 
+//  Request: /report with country code and report type
+//        country code - e.g. US, CA, MX, ...
+//        report type  - summary, detailed, historic, ...
 //
-//  Result: average temperature, humidity and probability of precipitation over next 5 days
-//          Summary: 
-//             > 90% of grids > 80    - hot
-//             > 80% of grids > 70-80 - warm
-//             else                   - mixed
+//  Summary report:
+//  * Result: average temperature, humidity and probability of precipitation over next 5 days
+//            summary: hot, warm, mixed
+//               > 90% of grids > 80    - hot
+//               > 80% of grids > 70-80 - warm
+//               else                   - mixed
 //
 //  Weather API service: https://www.weather.gov/documentation/services-web-api
 //  by grid:
