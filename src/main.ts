@@ -21,6 +21,11 @@
 //  DB table
 //    - table country
 //    - columns: code | gridX | gridY
+//               US | 31 | 80
+//               US | 32 | 80
+//               US | 33 | 79
+//               MX | 20 | 50
+//               MX | 21 | 49
 //
 
 import express from "express";
